@@ -36,5 +36,5 @@ AddEventHandler('aimedic:charge', function()
 	else
 		xPlayer.Functions.RemoveMoney("bank", Config.Price)
 	end
-	TriggerEvent("qb-bossmenu:server:addAccountMoney", 'ambulance', Config.Price) -- old qb, qb-bossmenu. New qb, change to qb-management. Only needed to add funds to ems society account.
+	TriggerEvent("qb-management:server:addAccountMoney", 'ambulance', Config.Price) -- old qb, qb-bossmenu. New qb, change to qb-management. Only needed to add funds to ems society account.
 end)
